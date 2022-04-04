@@ -47,3 +47,10 @@
 .registration:hover {
     background-color: #005374;
 }
+@media screen and (max-width:768px) {
+    .header {
+        max-width: 625px;
+        min-height: 240px;
+        flex-direction: column;
+    }
+}

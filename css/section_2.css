@@ -189,7 +189,7 @@
         flex-direction: column;
         align-content: unset;
     }
-    .container_1 {
-        margin: 25px;
+    .container_1,.container_2,.container_3,.container_4,.container_5 {
+        margin: 20px auto;
     }
 }

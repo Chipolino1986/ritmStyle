@@ -118,3 +118,11 @@
 .sertifikat a:hover {
     text-decoration: underline 3px rgb(87, 87, 191);
 }
+@media screen and (max-width:768px) {
+    .container_sec_5_one {
+        margin: 70px auto;
+    }
+    .container_sec_5_two {
+        margin: 30px auto;
+    }
+}

@@ -131,8 +131,23 @@
 @media screen and (max-width:1024px) {
     .container_location_map {
         margin: 0 auto;
+        width: 600px;
+        height: 450px;
+        min-height: 500px;
     }
     .container_location {
         margin: 25px auto;
+    }
+    .loc_2 {
+        position: absolute;
+        top: 37px;
+        left: 225px;
+        z-index: 10;
+    }
+    .loc {
+        position: absolute;
+        top: 240px;
+        left: 275px;
+        z-index: 10;
     }
 }
