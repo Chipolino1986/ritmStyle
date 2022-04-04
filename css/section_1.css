@@ -9,7 +9,7 @@
     background: url(../img/background_section_1.png);
     background-position:center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 .container {
     max-width: 587px;
