@@ -1,0 +1,120 @@
+.section_5 {
+    max-width: 1076px;
+    width: 100%;
+    min-height: 614px;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.title_sec_5_box {
+    width: 100%;
+    min-height: 60px;
+    height: 100%;
+    /* border: 1px solid yellow; */
+}
+.title_sec_5_text {
+    max-width: 520px;
+    width: 100%;
+    min-height: 59px;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title_sec_5_text p {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    font-style: normal;
+    line-height: 58.8px;
+    color: white;
+}
+/* ------------------------------------Container_sec_5--------------------------------------- */
+.container_sec_5 {
+    width: 100%;
+    min-height: 450px;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.container_sec_5_one {
+    max-width: 450px;
+    width: 100%;
+    min-height: 320px;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.price_container {
+    width: 100%;
+    height: 25px;
+    /* border: 1px solid yellow; */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.price_container a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-left: 20px;
+}
+.price_container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.price_block {
+    display: flex;
+    align-items: center;
+}
+.container_sec_5_two {
+    max-width: 526px;
+    width: 100%;
+    min-height: 450px;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.container_sec_5_two_img {
+    width: 100%;
+    height: 380px;
+    background-image: url(../img/sertifikat_sec_5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sertifikat {
+    width: 100%;
+    height: 65px;
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.sertifikat a {
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 29.4px;
+    color: white;
+}
+.sertifikat a:hover {
+    text-decoration: underline 3px rgb(87, 87, 191);
+}

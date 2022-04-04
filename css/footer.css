@@ -1,0 +1,39 @@
+.footer {
+    max-width: 1296px;
+    width: 100%;
+    min-height: 19px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid yellow; */
+    margin-top: 90px;
+}
+.left_box {
+    width: 200px;
+    height: 19px;
+    /* border: 1px solid yellow; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.9px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.right_box {
+    width: 250px;
+    height: 19px;
+    /* border: 1px solid yellow; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18.9px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
