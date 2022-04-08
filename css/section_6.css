@@ -1,64 +1,49 @@
 .section_6 {
-    max-width: 1296px;
-    width: 100%;
-    min-height: 604px;
-    height: 100%;
+    max-width: calc(300px + (1296 - 300) * ((100vw - 320px) / (1920 - 320)));
     /* border: 1px solid yellow; */
     margin: 0 auto;
     margin-top: 150px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 .container_location_map {
-    max-width: 856px;
-    width: 100%;
-    min-height: 604px;
-    height: 100%;
-    /* border: 1px solid yellow; */
+    max-width: calc(300px + (856 - 300) * ((100vw - 320px) / (1920 - 320)));
+    border: 1px solid yellow;
     position: relative;
 }
-.container_location {
-    max-width: 394px;
-    width: 100%;
-    min-height: 604px;
-    height: 100%;
+.container_location_map img {
+    max-width: calc(276px + (856 - 276) * ((100vw - 320px) / (1920 - 320)));
+}
+.container_adress {
+    max-width: calc(276px + (425 - 276) * ((100vw - 320px) / (1920 - 320)));
     /* border: 1px solid yellow; */
     display: flex;
-    align-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
-.loc {
-    position: absolute;
-    top: 365px;
-    left: 395px;
-    z-index: 10;
-}
-.loc_2 {
-    position: absolute;
-    top: 70px;
-    left: 330px;
-    z-index: 10;
-}
 .address {
-    max-width: 392px;
-    width: 100%;
-    min-height: 290px;
-    height: 100%;
+    max-width: calc(276px + (392 - 276) * ((100vw - 320px) / (1920 - 320)));
     /* border: 1px solid yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #018ABE;
     border-radius: 10px;
+    margin-top: calc(20px + (0 - 20) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: 12px;
+}
+.address:last-child {
+    margin-top: 12px;
 }
 .address_text_box {
-    width: 300px;
+    width: 392px;
     height: 225px;
     /* border: 1px solid yellow; */
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    margin: 30px;
 }
 .address_text_box img {
     margin-right: 20px;
@@ -127,27 +112,4 @@
 .btn:hover {
     background-color: #005374;
     color: white;
-}
-@media screen and (max-width:1024px) {
-    .container_location_map {
-        margin: 0 auto;
-        width: 600px;
-        height: 450px;
-        min-height: 500px;
-    }
-    .container_location {
-        margin: 25px auto;
-    }
-    .loc_2 {
-        position: absolute;
-        top: 37px;
-        left: 225px;
-        z-index: 10;
-    }
-    .loc {
-        position: absolute;
-        top: 240px;
-        left: 275px;
-        z-index: 10;
-    }
 }
