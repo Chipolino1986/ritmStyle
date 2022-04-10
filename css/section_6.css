@@ -1,45 +1,44 @@
 .section_6 {
-    max-width: calc(300px + (1296 - 300) * ((100vw - 320px) / (1920 - 320)));
-    /* border: 1px solid yellow; */
-    margin: 0 auto;
-    margin-top: 150px;
+    width: 100%;
+    margin-top: calc(30px + (150 - 30) * ((100vw - 320px) / (1920 - 320)));
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.container_location_map {
-    max-width: calc(300px + (856 - 300) * ((100vw - 320px) / (1920 - 320)));
-    border: 1px solid yellow;
-    position: relative;
+.main_container_section_6 {
+    max-width: calc(800px + (1296 - 800) * ((100vw - 320px) / (1920 - 320)));
+    display: flex;
 }
 .container_location_map img {
-    max-width: calc(276px + (856 - 276) * ((100vw - 320px) / (1920 - 320)));
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
 .container_adress {
     max-width: calc(276px + (425 - 276) * ((100vw - 320px) / (1920 - 320)));
-    /* border: 1px solid yellow; */
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
 }
 .address {
     max-width: calc(276px + (392 - 276) * ((100vw - 320px) / (1920 - 320)));
-    /* border: 1px solid yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #018ABE;
     border-radius: 10px;
-    margin-top: calc(20px + (0 - 20) * ((100vw - 320px) / (1920 - 320)));
-    margin-bottom: 12px;
 }
 .address:last-child {
     margin-top: 12px;
+    max-width: calc(220px + (392 - 220) * ((100vw - 320px) / (1920 - 320)));
+}
+.address:first-child {
+    margin-bottom: 12px;
+    max-width: calc(220px + (392 - 220) * ((100vw - 320px) / (1920 - 320)));
 }
 .address_text_box {
-    width: 392px;
-    height: 225px;
-    /* border: 1px solid yellow; */
+    max-width: calc(200px + (392 - 200) * ((100vw - 320px) / (1920 - 320)));
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -50,52 +49,52 @@
 }
 .address_text_1 {
     width: 100%;
-    /* border: 1px solid yellow; */
     font-family: 'El Messiri', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: calc(12px + (24 - 12) * ((100vw - 320px) / (1920 - 320)));
     line-height: 33.6px;
     color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: calc(11px + (21 - 11) * ((100vw - 320px) / (1920 - 320)));
 }
 .address_text_2 {
     width: 100%;
     height: 20px;
-    /* border: 1px solid yellow; */
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: calc(7px + (14 - 7) * ((100vw - 320px) / (1920 - 320)));
     line-height: 18.9px;
     font-weight: 400;
     color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: calc(11px + (21 - 11) * ((100vw - 320px) / (1920 - 320)));
 }
 .address_text_3 {
     width: 100%;
-    /* border: 1px solid yellow; */
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: calc(7px + (14 - 7) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     line-height: 18.9px;
     color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: calc(11px + (21 - 11) * ((100vw - 320px) / (1920 - 320)));
 }
 .address_text_4 {
     width: 100%;
-    /* border: 1px solid yellow; */
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: calc(7px + (14 - 7) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 400;
     line-height: 18.9px;
     color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
 }
 .btn {
     width: 155px;
@@ -103,7 +102,7 @@
     background-color: white;
     color: #018ABE;
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
+    font-size: calc(10px + (13 - 10) * ((100vw - 320px) / (1920 - 320)));
     font-weight: 600;
     line-height: 18.2px;
     border-radius: 3px;
@@ -112,4 +111,21 @@
 .btn:hover {
     background-color: #005374;
     color: white;
+}
+@media screen and (max-width:815px) {
+    .main_container_section_6 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .container_adress {
+        display: block;
+    }
+    .address:first-child {
+        margin-top: 20px;
+    }
+    .address:last-child {
+        margin-top: 20px;
+    }
 }

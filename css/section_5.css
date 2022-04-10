@@ -1,22 +1,25 @@
 .section_5 {
-    max-width: calc(320px + (1076 - 320) * ((100vw - 320px) / (1920 - 320)));
-    /* border: 1px solid yellow; */
+    width: 100%;
     margin: 0 auto;
     margin-top: calc(100px + (150 - 100) * ((100vw - 320px) / (1920 - 320)));
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     min-height: calc(320px + (500 - 320) * ((100vw - 320px) / (1920 - 320)));
+}
+.main_container_section_5 {
+    width: 1076px;
+    display: flex;
 }
 .title_sec_5_box {
     width: 100%;
     max-width: calc(320px + (1076 - 320) * ((100vw - 320px) / (1920 - 320)));
-    /* border: 1px solid yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
+    margin-bottom: calc(50px + (100 - 50) * ((100vw - 320px) / (1920 - 320)));
 }
 .title_sec_5_box p {
     font-family: 'El Messiri', sans-serif;
@@ -31,7 +34,6 @@
 
 .container_sec_5_one {
     max-width: calc(300px + (416 - 300) * ((100vw - 320px) / (1920 - 320)));
-    /* border: 1px solid yellow; */
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -41,7 +43,6 @@
 }
 .price_container {
     min-width: calc(200px + (416 - 200) * ((100vw - 320px) / (1920 - 320)));
-    /* border: 1px solid yellow; */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -75,7 +76,6 @@
 /* ------------------------------------------------------------------------------- */
 .container_sec_5_two {
     max-width: calc(300px + (526 - 300) * ((100vw - 320px) / (1920 - 320)));
-    /* border: 1px solid yellow; */
     display: flex;
     flex-wrap: wrap;
     margin-top: calc(40px + (0 - 40) * ((100vw - 320px) / (1920 - 320)));
@@ -87,7 +87,6 @@
 }
 .sertifikat {
     max-width: calc(300px + (548 - 300) * ((100vw - 320px) / (1920 - 320)));
-    /* border: 1px solid yellow; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -104,4 +103,9 @@
 }
 .sertifikat a:hover {
     text-decoration: underline 3px rgb(87, 87, 191);
+}
+@media screen and (max-width: 980px) {
+    .main_container_section_5 {
+        display: block;
+    }
 }

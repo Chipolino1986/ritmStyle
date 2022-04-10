@@ -1,6 +1,5 @@
 .header {
     max-width: 1298px;
-    /* border: 1px solid yellow; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -10,7 +9,6 @@
 .nav {
     max-width: 675px;
     min-height: 19px;
-    /* border: 1px solid yellow; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -18,7 +16,7 @@
 }
 .items {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: calc(12px + (14 - 12) * ((100vw - 710px) / (1920 - 710)));
     line-height: 18.9px;
     color: white;
     transition: all .2s ease-out;
@@ -35,7 +33,6 @@
     width: 100%;
     min-height: 40px;
     height: 100%;
-    /* border: 1px solid yellow; */
     display: none;
     flex-direction: column;
     justify-content: space-around;

@@ -1,6 +1,5 @@
 .section_3 {
-    max-width: calc(300px + (1920 - 300) * ((100vw - 320px) / (1920 - 320)));
-    /* border: 1px solid yellow; */
+    width: 100%;
     margin: 0 auto;
     margin-top: calc(100px + (150 - 100) * ((100vw - 320px) / (1920 - 320)));
     display: flex;
@@ -8,9 +7,9 @@
     justify-content: center;
 }
 .title_two_box {
+    width: 100%;
     display: flex;
     justify-content: center;
-    /* border: 1px solid yellow; */
     align-items: center;
     margin-bottom: calc(50px + (100 - 50) * ((100vw - 320px) / (1920 - 320)));
 }
@@ -27,23 +26,26 @@
 }
 /* ------------------------------------------------------------------------------------------ */
 .container_sec_3 {
-    width: 1736px;
-    /* border: 1px solid yellow; */
+    max-width: calc(710px + (1736 - 710) * ((100vw - 320px) / (1920 - 320)));
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-/* --------------------------------review_1---------------------------------- */
+/* --------------------------------review---------------------------------- */
 .review {
-    max-width: calc(200px + (500 - 200) * ((100vw - 320px) / (1920 - 320)));
-    /* border: 1px solid yellow; */
+    max-width: calc(250px + (500 - 250) * ((100vw - 320px) / (1920 - 320)));
     transition: all .4s;
     opacity: .7;
     border-radius: 10px;
     background-color: #0188be6f;
-    margin-bottom: calc(20px + (0 - 20) * ((100vw - 320px) / (1920 - 320)));
+}
+.review:nth-child(1) {
+    margin-right: 50px;
+}
+.review:nth-child(3) {
+    margin-left: 50px;
 }
 .review:hover {
     transform: scale(1.2);
@@ -53,7 +55,7 @@
 .review p {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: calc(6px + (10 - 6) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(8px + (10 - 8) * ((100vw - 710px) / (1920 - 320)));
     color: white;
 }
 .container_sec_3 h1,h2,h3 {
@@ -61,15 +63,15 @@
     font-weight: 700;
     font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1920 - 320)));
     color: white;
-    margin-bottom: 15px;
-    margin-top: 45px;
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-top: calc(10px + (40 - 10) * ((100vw - 320px) / (1920 - 320)));
+    margin-left: calc(10px + (45 - 10) * ((100vw - 320px) / (1920 - 320)));
+    margin-right: calc(10px + (45 - 10) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(8px + (30 - 8) * ((100vw - 320px) / (1920 - 320)));
 }
 .container_sec_3 p {
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-bottom: 30px;
+    margin-left: calc(10px + (45 - 10) * ((100vw - 320px) / (1920 - 320)));
+    margin-right: calc(10px + (45 - 10) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
 }
 
 /* -------------------------------------Control---------------------------------------- */
@@ -78,12 +80,10 @@
     min-height: 16px;
     height: 16px;
     margin-top: 40px;
-    /* border: 1px solid yellow; */
 }
 .cotrol_box {
-    width: 124px;
+    max-width: 124px;
     height: 16px;
-    /* border: 1px solid yellow; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -91,31 +91,47 @@
 .control_cubik {
     width: 16px;
     height: 16px;
-    background: url(../img/control_cubik_sec_3.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: gray;
+    border-radius: 3px;
     transition: all .2s ease-in;
 }
 .control_cubik:hover {
     width: 15px;
     height: 15px;
     transform: scale(1.2);
-    background: url(../img/Rectangle\ 19.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: white;
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1416px) {
     .container_sec_3 {
-        justify-content: center;
+        max-width: 1200px;
     }
     .review {
-        margin: 20px;
+        margin: 20px auto;
+        max-width: calc(250px + (900 - 250) * ((100vw - 320px) / (1920 - 320)));
     }
 }
-@media screen and (max-width:1024px) {
-    .review:hover {
-        transform: scale(1);
+@media screen and (max-width:720px) {
+    .section_3 {
+        display: block;
+        margin-top: 50px;
+    }
+    .review:nth-child(1) {
+        margin: 20px auto;
+    }
+    .review:nth-child(3) {
+        margin: 20px auto;
+    }
+    .control_cubik {
+        width: 12px;
+        height: 12px;
+    }
+    .control_cubik:hover {
+        width: 14px;
+        height: 14px;
+        transform: scale(1.1);
+        background-color: white;
+    }
+    .cotrol_box {
+        max-width: 90px;
     }
 }

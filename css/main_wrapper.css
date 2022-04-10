@@ -1,12 +1,26 @@
 .main_wrapper {
     max-width: 1920px;
-    min-height: 5155px;
     background-color: #162831;
     margin: 0 auto;
     padding-top: 30px;
 }
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1920px) {
     .main_wrapper {
-        padding: 0 20px 0 20px;
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width:1600px) {
+    .main_wrapper {
+        padding: 30px 25px 0 25px;
+    }
+}
+@media screen and (max-width:420px) {
+    .main_wrapper {
+        padding: 0 10px 0 10px;
+    }
+}
+@media screen and (max-width:320px) {
+    .main_wrapper {
+        padding: 0 10px 0 10px;
     }
 }
