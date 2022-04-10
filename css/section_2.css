@@ -6,7 +6,7 @@
     margin-top: calc(80px + (150 - 80) * ((100vw - 320px) / (1920 - 320)));
 }
 .container {
-    max-width: calc(300px + (1920 - 300) * ((100vw - 320px) / (1920 - 320)));
+    max-width: calc(800px + (1296 - 750) * ((100vw - 320px) / (1920 - 320)));
     display: flex;
     flex-wrap: wrap;
     align-items: center;
